@@ -15,7 +15,7 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
         <img
-          src={apartment.images[0]}
+          src="/hbscshouse11.jpg"
           alt={t(apartment.nameKey)}
           className="w-full h-64 object-cover"
         />
