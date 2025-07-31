@@ -16,7 +16,7 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
       <div className="relative">
         <img
           src="/hbscshouse11.jpg"
-          alt={t(apartment.nameKey)}
+          alt={`${t('apartment.card.alt.prefix')} ${t(apartment.nameKey)}`}
           className="w-full h-64 object-cover"
         />
         <div className="absolute top-4 right-4 bg-white bg-opacity-90 px-2 py-1 rounded-lg text-sm font-semibold">

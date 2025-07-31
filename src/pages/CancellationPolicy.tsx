@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import BlurText from '../components/BlurText';
@@ -8,6 +9,10 @@ const CancellationPolicy: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>{t('cancellation.seo.title')}</title>
+        <meta name="description" content={t('cancellation.seo.description')} />
+      </Helmet>
       <div className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-lg p-8">

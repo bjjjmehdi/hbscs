@@ -54,6 +54,11 @@ const translations = {
     'hero.cta.explore': 'Explore Our Apartments',
     'hero.cta.story': 'Our Story',
     
+    // Home Page SEO
+    'home.seo.title': 'Hibiscus - Luxury Apartments in Madeira',
+    'home.seo.description': 'Discover your perfect luxury apartment in Madeira. Hibiscus offers stunning ocean and mountain views, premium amenities, and an unforgettable experience.',
+    'home.seo.keywords': 'luxury apartments madeira, madeira vacation rentals, hibiscus madeira, ocean view apartments madeira, funchal apartments, luxury holiday homes madeira, madeira travel, madeira accommodation',
+
     // Home Page Features
     'home.features.title': 'Where Nature Meets Luxury',
     'home.features.subtitle': 'Experience the magic of Madeira through our carefully curated apartments, each designed to immerse you in the island\'s natural beauty while providing unparalleled comfort and style.',
@@ -76,6 +81,11 @@ const translations = {
     'home.cta.view': 'View All Apartments',
     'home.cta.learn': 'Learn More',
     
+    // Apartments Page SEO
+    'apartments.seo.title': 'Luxury Apartments in Madeira - Hibiscus',
+    'apartments.seo.description': 'Explore our collection of luxury apartments in Madeira. Find your perfect getaway with stunning ocean and mountain views.',
+    'apartments.seo.keywords': 'luxury apartments madeira, madeira apartments for rent, hibiscus apartments, all apartments madeira, madeira apartment collection, book apartment madeira, funchal luxury rentals',
+
     // Apartments Page
     'apartments.title': 'Our Luxury Apartments',
     'apartments.subtitle': 'Discover our carefully curated collection of premium accommodations, each offering a unique perspective on Madeira\'s natural beauty.',
@@ -99,6 +109,7 @@ const translations = {
     'card.bed': 'bed',
     'card.bath': 'bath',
     'card.night': '/night',
+    'apartment.card.alt.prefix': 'Exterior view of',
     
     // Booking Calendar
     'booking.pernight': 'per night',
@@ -111,9 +122,16 @@ const translations = {
     'booking.reserve': 'Reserve Now',
     'booking.notice': 'You won\'t be charged yet. This is a booking request.',
     
+    // About Page SEO
+    'about.seo.title': 'About Hibiscus - Our Story and Values',
+    'about.seo.description': 'Learn about Hibiscus, our commitment to sustainable luxury, and our passion for creating unforgettable experiences in Madeira.',
+    'about.seo.keywords': 'about hibiscus madeira, madeira luxury apartments story, sustainable tourism madeira, maria santos madeira, hibiscus values, eco-luxury madeira, responsible travel madeira',
+
     // About Page
     'about.hero.title': 'Our Story',
     'about.hero.subtitle': 'Born from a deep love for Madeira and a vision to share its magic with the world',
+    'about.hero.image_alt': 'Lush, green mountains of Madeira island',
+    'about.founder.image_alt': 'Maria Santos, founder of Hibiscus',
     'about.heart.title': 'The Heart of Hibiscus',
     'about.heart.p1': 'Hibiscus was born from a simple yet profound realization: that the most meaningful travel experiences happen when we truly connect with a place. Founded in 2020 by Maria Santos, a native Madeiran with a background in sustainable tourism, Hibiscus emerged from her desire to share the island\'s hidden gems with discerning travelers.',
     'about.heart.p2': 'Growing up surrounded by the laurel forests and dramatic coastlines of Madeira, Maria understood that the island\'s true luxury lies not in gilded surfaces, but in the raw beauty of its landscapes and the warmth of its people. This understanding became the foundation of Hibiscus - a collection of carefully curated apartments that serve as gateways to authentic Madeiran experiences.',
@@ -184,6 +202,11 @@ const translations = {
     'footer.madewith': 'Made with',
     'footer.inmadeira': 'in Madeira',
     
+    // Contact Page SEO
+    'contact.seo.title': 'Contact Hibiscus - Madeira Luxury Apartments',
+    'contact.seo.description': 'Get in touch with Hibiscus to book your luxury apartment in Madeira or for any inquiries. We\'re here to help you plan your perfect stay.',
+    'contact.seo.keywords': 'contact hibiscus madeira, book madeira apartments, madeira luxury rentals contact, hibiscus madeira address, madeira vacation inquiries, funchal apartment booking',
+
     // Contact Page
     'contact.title': 'Contact Us',
     'contact.subtitle': 'We\'re here to help you plan your perfect stay in Madeira',
@@ -228,6 +251,16 @@ const translations = {
     'cookies.functional.title': 'Functional Cookies',
     'cookies.functional.desc': 'These cookies enable enhanced functionality and personalization.',
     
+    // Legal Pages SEO
+    'privacy.seo.title': 'Privacy Policy - Hibiscus Madeira',
+    'privacy.seo.description': 'Read our privacy policy to understand how we collect, use, and protect your personal information at Hibiscus Madeira.',
+    'terms.seo.title': 'Terms of Service - Hibiscus Madeira',
+    'terms.seo.description': 'Review our terms of service to understand the rules and guidelines for using our website and booking our luxury apartments.',
+    'cookiepolicy.seo.title': 'Cookie Policy - Hibiscus Madeira',
+    'cookiepolicy.seo.description': 'Learn about how we use cookies to enhance your browsing experience on the Hibiscus Madeira website.',
+    'cancellation.seo.title': 'Cancellation Policy - Hibiscus Madeira',
+    'cancellation.seo.description': 'Understand our cancellation policy for bookings at Hibiscus Madeira. Find details on refunds and modifications.',
+
     // Legal Pages
     'privacy.title': 'Privacy Policy',
     'privacy.lastupdated': 'Last updated',
@@ -360,6 +393,11 @@ const translations = {
     'hero.cta.explore': 'Explore os Nossos Apartamentos',
     'hero.cta.story': 'A Nossa História',
     
+    // Home Page SEO
+    'home.seo.title': 'Hibiscus - Apartamentos de Luxo na Madeira',
+    'home.seo.description': 'Descubra o seu apartamento de luxo perfeito na Madeira. A Hibiscus oferece vistas deslumbrantes sobre o oceano e a montanha, comodidades premium e uma experiência inesquecível.',
+    'home.seo.keywords': 'apartamentos de luxo madeira, aluguer de férias madeira, hibiscus madeira, apartamentos com vista para o mar madeira, apartamentos funchal, casas de férias de luxo madeira, viajar para a madeira, alojamento na madeira',
+
     // Home Page Features
     'home.features.title': 'Onde a Natureza Encontra o Luxo',
     'home.features.subtitle': 'Experimente a magia da Madeira através dos nossos apartamentos cuidadosamente selecionados, cada um projetado para o imergir na beleza natural da ilha, proporcionando conforto e estilo incomparáveis.',
@@ -382,6 +420,11 @@ const translations = {
     'home.cta.view': 'Ver Todos os Apartamentos',
     'home.cta.learn': 'Saber Mais',
     
+    // Apartments Page SEO
+    'apartments.seo.title': 'Apartamentos de Luxo na Madeira - Hibiscus',
+    'apartments.seo.description': 'Explore a nossa coleção de apartamentos de luxo na Madeira. Encontre a sua escapadela perfeita com vistas deslumbrantes sobre o oceano e a montanha.',
+    'apartments.seo.keywords': 'apartamentos de luxo madeira, apartamentos para alugar madeira, apartamentos hibiscus, todos os apartamentos madeira, coleção de apartamentos madeira, reservar apartamento madeira, alugueres de luxo funchal',
+
     // Apartments Page
     'apartments.title': 'Os Nossos Apartamentos de Luxo',
     'apartments.subtitle': 'Descubra a nossa coleção cuidadosamente selecionada de acomodações premium, cada uma oferecendo uma perspetiva única sobre a beleza natural da Madeira.',
@@ -405,6 +448,7 @@ const translations = {
     'card.bed': 'quarto',
     'card.bath': 'wc',
     'card.night': '/noite',
+    'apartment.card.alt.prefix': 'Vista exterior de',
     
     // Booking Calendar
     'booking.pernight': 'por noite',
@@ -417,9 +461,16 @@ const translations = {
     'booking.reserve': 'Reservar Agora',
     'booking.notice': 'Ainda não será cobrado. Esta é uma solicitação de reserva.',
     
+    // About Page SEO
+    'about.seo.title': 'Sobre a Hibiscus - A Nossa História e Valores',
+    'about.seo.description': 'Saiba mais sobre a Hibiscus, o nosso compromisso com o luxo sustentável e a nossa paixão por criar experiências inesquecíveis na Madeira.',
+    'about.seo.keywords': 'sobre a hibiscus madeira, história dos apartamentos de luxo na madeira, turismo sustentável madeira, maria santos madeira, valores da hibiscus, eco-luxo madeira, viagens responsáveis madeira',
+
     // About Page
     'about.hero.title': 'A Nossa História',
     'about.hero.subtitle': 'Nascida de um profundo amor pela Madeira e uma visão de partilhar a sua magia com o mundo',
+    'about.hero.image_alt': 'Montanhas verdes e exuberantes da ilha da Madeira',
+    'about.founder.image_alt': 'Maria Santos, fundadora da Hibiscus',
     'about.heart.title': 'O Coração da Hibiscus',
     'about.heart.p1': 'A Hibiscus nasceu de uma perceção simples mas profunda: as experiências de viagem mais significativas acontecem quando nos conectamos verdadeiramente com um lugar. Fundada em 2020 por Maria Santos, uma madeirense nativa com experiência em turismo sustentável, a Hibiscus surgiu do seu desejo de partilhar as joias escondidas da ilha com viajantes exigentes.',
     'about.heart.p2': 'Crescendo rodeada pelas florestas de loureiro e costas dramáticas da Madeira, Maria compreendeu que o verdadeiro luxo da ilha não reside em superfícies douradas, mas na beleza crua das suas paisagens e no calor do seu povo. Esta compreensão tornou-se a fundação da Hibiscus - uma coleção de apartamentos cuidadosamente selecionados que servem como portais para experiências madeirenses autênticas.',
@@ -490,6 +541,11 @@ const translations = {
     'footer.madewith': 'Feito com',
     'footer.inmadeira': 'na Madeira',
     
+    // Contact Page SEO
+    'contact.seo.title': 'Contactar a Hibiscus - Apartamentos de Luxo na Madeira',
+    'contact.seo.description': 'Entre em contacto com a Hibiscus para reservar o seu apartamento de luxo na Madeira ou para qualquer questão. Estamos aqui para o ajudar a planear a sua estadia perfeita.',
+    'contact.seo.keywords': 'contactar a hibiscus madeira, reservar apartamentos na madeira, contacto para alugueres de luxo na madeira, endereço da hibiscus madeira, questões sobre férias na madeira, reserva de apartamentos no funchal',
+
     // Contact Page
     'contact.title': 'Contacte-nos',
     'contact.subtitle': 'Estamos aqui para o ajudar a planear a sua estadia perfeita na Madeira',
@@ -534,6 +590,16 @@ const translations = {
     'cookies.functional.title': 'Cookies Funcionais',
     'cookies.functional.desc': 'Estes cookies permitem funcionalidades melhoradas e personalização.',
     
+    // Legal Pages SEO
+    'privacy.seo.title': 'Política de Privacidade - Hibiscus Madeira',
+    'privacy.seo.description': 'Leia a nossa política de privacidade para entender como recolhemos, usamos e protegemos as suas informações pessoais na Hibiscus Madeira.',
+    'terms.seo.title': 'Termos de Serviço - Hibiscus Madeira',
+    'terms.seo.description': 'Reveja os nossos termos de serviço para entender as regras e diretrizes para usar o nosso site e reservar os nossos apartamentos de luxo.',
+    'cookiepolicy.seo.title': 'Política de Cookies - Hibiscus Madeira',
+    'cookiepolicy.seo.description': 'Saiba como usamos cookies para melhorar a sua experiência de navegação no site da Hibiscus Madeira.',
+    'cancellation.seo.title': 'Política de Cancelamento - Hibiscus Madeira',
+    'cancellation.seo.description': 'Entenda a nossa política de cancelamento para reservas na Hibiscus Madeira. Encontre detalhes sobre reembolsos e modificações.',
+
     // Legal Pages
     'privacy.title': 'Política de Privacidade',
     'privacy.lastupdated': 'Última atualização',
@@ -666,6 +732,11 @@ const translations = {
     'hero.cta.explore': 'Explorez Nos Appartements',
     'hero.cta.story': 'Notre Histoire',
     
+    // Home Page SEO
+    'home.seo.title': 'Hibiscus - Appartements de Luxe à Madère',
+    'home.seo.description': 'Découvrez votre appartement de luxe idéal à Madère. Hibiscus propose des vues imprenables sur l\'océan et la montagne, des équipements haut de gamme et une expérience inoubliable.',
+    'home.seo.keywords': 'appartements de luxe madère, locations de vacances madère, hibiscus madère, appartements vue mer madère, appartements funchal, maisons de vacances de luxe madère, voyager à madère, hébergement à madère',
+
     // Home Page Features
     'home.features.title': 'Où la Nature Rencontre le Luxe',
     'home.features.subtitle': 'Découvrez la magie de Madère à travers nos appartements soigneusement sélectionnés, chacun conçu pour vous immerger dans la beauté naturelle de l\'île tout en offrant un confort et un style inégalés.',
@@ -688,6 +759,11 @@ const translations = {
     'home.cta.view': 'Voir Tous les Appartements',
     'home.cta.learn': 'En Savoir Plus',
     
+    // Apartments Page SEO
+    'apartments.seo.title': 'Appartements de Luxe à Madère - Hibiscus',
+    'apartments.seo.description': 'Explorez notre collection d\'appartements de luxe à Madère. Trouvez votre escapade idéale avec des vues imprenables sur l\'océan et la montagne.',
+    'apartments.seo.keywords': 'appartements de luxe madère, appartements à louer madère, appartements hibiscus, tous les appartements madère, collection d\'appartements madère, réserver un appartement madère, locations de luxe funchal',
+
     // Apartments Page
     'apartments.title': 'Nos Appartements de Luxe',
     'apartments.subtitle': 'Découvrez notre collection soigneusement sélectionnée d\'hébergements premium, chacun offrant une perspective unique sur la beauté naturelle de Madère.',
@@ -711,6 +787,7 @@ const translations = {
     'card.bed': 'lit',
     'card.bath': 'bain',
     'card.night': '/nuit',
+    'apartment.card.alt.prefix': 'Vue extérieure de',
     
     // Booking Calendar
     'booking.pernight': 'par nuit',
@@ -723,9 +800,16 @@ const translations = {
     'booking.reserve': 'Réserver Maintenant',
     'booking.notice': 'Vous ne serez pas encore facturé. Ceci est une demande de réservation.',
     
+    // About Page SEO
+    'about.seo.title': 'À Propos d\'Hibiscus - Notre Histoire et Nos Valeurs',
+    'about.seo.description': 'Découvrez Hibiscus, notre engagement pour un luxe durable et notre passion pour la création d\'expériences inoubliables à Madère.',
+    'about.seo.keywords': 'à propos d\'hibiscus madère, histoire des appartements de luxe à madère, tourisme durable madère, maria santos madère, valeurs d\'hibiscus, éco-luxe madère, voyages responsables madère',
+
     // About Page
     'about.hero.title': 'Notre Histoire',
     'about.hero.subtitle': 'Née d\'un amour profond pour Madère et d\'une vision de partager sa magie avec le monde',
+    'about.hero.image_alt': 'Montagnes verdoyantes et luxuriantes de l\'île de Madère',
+    'about.founder.image_alt': 'Maria Santos, fondatrice d\'Hibiscus',
     'about.heart.title': 'Le Cœur d\'Hibiscus',
     'about.heart.p1': 'Hibiscus est née d\'une réalisation simple mais profonde : les expériences de voyage les plus significatives se produisent lorsque nous nous connectons vraiment avec un lieu. Fondée en 2020 par Maria Santos, une native de Madère avec une expérience en tourisme durable, Hibiscus a émergé de son désir de partager les joyaux cachés de l\'île avec des voyageurs exigeants.',
     'about.heart.p2': 'Ayant grandi entourée par les forêts de lauriers et les côtes dramatiques de Madère, Maria a compris que le véritable luxe de l\'île ne réside pas dans les surfaces dorées, mais dans la beauté brute de ses paysages et la chaleur de son peuple. Cette compréhension est devenue la fondation d\'Hibiscus - une collection d\'appartements soigneusement sélectionnés qui servent de portails vers des expériences madériennes authentiques.',
@@ -796,6 +880,11 @@ const translations = {
     'footer.madewith': 'Fait avec',
     'footer.inmadeira': 'à Madère',
     
+    // Contact Page SEO
+    'contact.seo.title': 'Contacter Hibiscus - Appartements de Luxe à Madère',
+    'contact.seo.description': 'Prenez contact avec Hibiscus pour réserver votre appartement de luxe à Madère ou pour toute demande. Nous sommes là pour vous aider à planifier votre séjour parfait.',
+    'contact.seo.keywords': 'contacter hibiscus madère, réserver appartements madère, contact locations de luxe madère, adresse hibiscus madère, demandes de renseignements vacances madère, réservation appartement funchal',
+
     // Contact Page
     'contact.title': 'Contactez-nous',
     'contact.subtitle': 'Nous sommes là pour vous aider à planifier votre séjour parfait à Madère',
@@ -840,6 +929,16 @@ const translations = {
     'cookies.functional.title': 'Cookies Fonctionnels',
     'cookies.functional.desc': 'Ces cookies permettent des fonctionnalités améliorées et la personnalisation.',
     
+    // Legal Pages SEO
+    'privacy.seo.title': 'Politique de Confidentialité - Hibiscus Madeira',
+    'privacy.seo.description': 'Lisez notre politique de confidentialité pour comprendre comment nous collectons, utilisons et protégeons vos informations personnelles chez Hibiscus Madeira.',
+    'terms.seo.title': 'Conditions de Service - Hibiscus Madeira',
+    'terms.seo.description': 'Consultez nos conditions de service pour comprendre les règles et directives d\'utilisation de notre site web et de réservation de nos appartements de luxe.',
+    'cookiepolicy.seo.title': 'Politique des Cookies - Hibiscus Madeira',
+    'cookiepolicy.seo.description': 'Découvrez comment nous utilisons les cookies pour améliorer votre expérience de navigation sur le site de Hibiscus Madeira.',
+    'cancellation.seo.title': 'Politique d\'Annulation - Hibiscus Madeira',
+    'cancellation.seo.description': 'Comprenez notre politique d\'annulation pour les réservations chez Hibiscus Madeira. Trouvez des détails sur les remboursements et les modifications.',
+
     // Legal Pages
     'privacy.title': 'Politique de Confidentialité',
     'privacy.lastupdated': 'Dernière mise à jour',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { apartments } from '../data/apartments';
 import ApartmentCard from '../components/ApartmentCard';
@@ -42,6 +43,72 @@ const Apartments: React.FC = () => {
 
     return (
       <div className="min-h-screen bg-gray-50">
+        <Helmet>
+          <title>{t(apartment.nameKey)} - Hibiscus</title>
+          <meta name="description" content={t(apartment.shortDescriptionKey)} />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ApartmentComplex",
+              "name": t(apartment.nameKey),
+              "description": t(apartment.descriptionKey),
+              "image": apartment.images,
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": apartment.location.address,
+                "addressLocality": "Funchal",
+                "addressRegion": "Madeira",
+                "addressCountry": "PT"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": apartment.location.lat,
+                "longitude": apartment.location.lng
+              },
+              "numberOfBedrooms": apartment.bedrooms,
+              "maximumAttendeeCapacity": apartment.maxGuests,
+              "amenityFeature": apartment.amenitiesKeys.map(key => ({
+                "@type": "LocationFeatureSpecification",
+                "name": t(key)
+              })),
+              "containsPlace": {
+                "@type": "Apartment",
+                "name": t(apartment.nameKey),
+                "description": t(apartment.descriptionKey),
+                "numberOfBedrooms": apartment.bedrooms,
+                "maximumAttendeeCapacity": apartment.maxGuests,
+                "amenityFeature": apartment.amenitiesKeys.map(key => ({
+                  "@type": "LocationFeatureSpecification",
+                  "name": t(key)
+                }))
+              }
+            })}
+          </script>
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": t(apartment.nameKey),
+              "description": t(apartment.shortDescriptionKey),
+              "image": apartment.images[0],
+              "offers": {
+                "@type": "Offer",
+                "price": apartment.price,
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock"
+              }
+            })}
+          </script>
+          <meta property="og:title" content={`${t(apartment.nameKey)} - Hibiscus`} />
+          <meta property="og:description" content={t(apartment.shortDescriptionKey)} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={window.location.href} />
+          <meta property="og:image" content={apartment.images[0]} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={`${t(apartment.nameKey)} - Hibiscus`} />
+          <meta name="twitter:description" content={t(apartment.shortDescriptionKey)} />
+          <meta name="twitter:image" content={apartment.images[0]} />
+        </Helmet>
         <div className="pt-20 pb-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-3 gap-8">
@@ -161,6 +228,38 @@ const Apartments: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>{t('apartments.seo.title')}</title>
+        <meta name="description" content={t('apartments.seo.description')} />
+        <meta name="keywords" content={t('apartments.seo.keywords')} />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": t('apartments.seo.title'),
+              "description": t('apartments.seo.description'),
+              "itemListElement": apartments.map((apartment, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "ApartmentComplex",
+                  "name": t(apartment.nameKey),
+                  "description": t(apartment.shortDescriptionKey),
+                  "url": `${window.location.origin}/apartments/${apartment.id}`
+                }
+              }))
+            })}
+          </script>
+        <meta property="og:title" content={t('apartments.seo.title')} />
+        <meta property="og:description" content={t('apartments.seo.description')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content="/hbscshouse11.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('apartments.seo.title')} />
+        <meta name="twitter:description" content={t('apartments.seo.description')} />
+        <meta name="twitter:image" content="/hbscshouse11.jpg" />
+      </Helmet>
       <div className="pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
 import ApartmentCard from '../components/ApartmentCard';
 import { apartments } from '../data/apartments';
@@ -34,6 +35,20 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{t('home.seo.title')}</title>
+        <meta name="description" content={t('home.seo.description')} />
+        <meta name="keywords" content={t('home.seo.keywords')} />
+        <meta property="og:title" content={t('home.seo.title')} />
+        <meta property="og:description" content={t('home.seo.description')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content="/hbscshouse11.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('home.seo.title')} />
+        <meta name="twitter:description" content={t('home.seo.description')} />
+        <meta name="twitter:image" content="/hbscshouse11.jpg" />
+      </Helmet>
       <Hero />
       
       {/* Features Section */}

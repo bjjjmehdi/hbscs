@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Heart, Leaf, Users, Award } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import BlurText from '../components/BlurText';
@@ -31,13 +32,27 @@ const About: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>{t('about.seo.title')}</title>
+        <meta name="description" content={t('about.seo.description')} />
+        <meta name="keywords" content={t('about.seo.keywords')} />
+        <meta property="og:title" content={t('about.seo.title')} />
+        <meta property="og:description" content={t('about.seo.description')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content="../hbscswbst1.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('about.seo.title')} />
+        <meta name="twitter:description" content={t('about.seo.description')} />
+        <meta name="twitter:image" content="../hbscswbst1.jpg" />
+      </Helmet>
       <div className="pt-20 pb-12">
         {/* Hero Section with hbscswbst1.jpg */}
         <div className="relative h-96 mb-16">
           <div className="absolute inset-0">
             <img
               src="../hbscswbst1.jpg" // Changed to your local image
-              alt="About Us Background"
+              alt={t('about.hero.image_alt')}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -78,7 +93,7 @@ const About: React.FC = () => {
             <div className="space-y-6">
               <img
                 src="../hbscswbst2.jpg"
-                alt="Founder"
+                alt={t('about.founder.image_alt')}
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
               <div className="bg-white p-6 rounded-lg shadow-lg">
