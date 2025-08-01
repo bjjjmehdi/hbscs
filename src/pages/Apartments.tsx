@@ -147,11 +147,7 @@ const Apartments: React.FC = () => {
                         delay={80}
                         animateBy="words"
                       />
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div className="flex items-center space-x-2">
-                          <Users className="h-5 w-5 text-gray-400" />
-                          <span className="text-gray-600">{apartment.maxGuests} {t('apartments.details.guests')}</span>
-                        </div>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         <div className="flex items-center space-x-2">
                           <Bed className="h-5 w-5 text-gray-400" />
                           <span className="text-gray-600">
@@ -161,12 +157,32 @@ const Apartments: React.FC = () => {
                         <div className="flex items-center space-x-2">
                           <Bath className="h-5 w-5 text-gray-400" />
                           <span className="text-gray-600">
-                            {apartment.bathrooms} {apartment.bathrooms > 1 ? t('apartments.details.bathrooms') : t('apartments.details.bathroom')}
+                            {apartment.fullBathrooms} {apartment.fullBathrooms > 1 ? t('apartments.details.full_bathrooms') : t('apartments.details.full_bathroom')}
                           </span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <MapPin className="h-5 w-5 text-gray-400" />
-                          <span className="text-gray-600">{t('apartments.details.location')}</span>
+                          <Bath className="h-5 w-5 text-gray-400" />
+                          <span className="text-gray-600">
+                            {apartment.halfBathrooms} {apartment.halfBathrooms > 1 ? t('apartments.details.half_bathrooms') : t('apartments.details.half_bathroom')}
+                          </span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Bed className="h-5 w-5 text-gray-400" />
+                          <span className="text-gray-600">
+                            {apartment.queenBeds} {apartment.queenBeds > 1 ? t('apartments.details.queen_beds') : t('apartments.details.queen_bed')}
+                          </span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Bed className="h-5 w-5 text-gray-400" />
+                          <span className="text-gray-600">
+                            {apartment.singleBeds} {apartment.singleBeds > 1 ? t('apartments.details.single_beds') : t('apartments.details.single_bed')}
+                          </span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Users className="h-5 w-5 text-gray-400" />
+                          <span className="text-gray-600">
+                            {apartment.sofaBeds} {apartment.sofaBeds > 1 ? t('apartments.details.sofa_beds') : t('apartments.details.sofa_bed')}
+                          </span>
                         </div>
                       </div>
                     </div>

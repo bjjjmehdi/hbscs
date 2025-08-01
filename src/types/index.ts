@@ -14,7 +14,11 @@ export interface Apartment {
   price: number;
   maxGuests: number;
   bedrooms: number;
-  bathrooms: number;
+  fullBathrooms: number;
+  halfBathrooms: number;
+  queenBeds: number;
+  singleBeds: number;
+  sofaBeds: number;
 }
 
 export interface BookingData {

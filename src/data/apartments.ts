@@ -43,7 +43,11 @@ export const apartments: Apartment[] = [
     },
     price: 280,
     maxGuests: 4,
-    bedrooms: 2,
-    bathrooms: 2
+    bedrooms: 3,
+    fullBathrooms: 1,
+    halfBathrooms: 1,
+    queenBeds: 2,
+    singleBeds: 2,
+    sofaBeds: 1
   }
 ];
