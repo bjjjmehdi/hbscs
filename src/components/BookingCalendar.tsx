@@ -63,18 +63,11 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({ apartmentId, price, m
     // Don't allow selecting past dates
     if (date < today) return;
 
-    if (!checkInDate || (checkInDate && checkOutDate)) {
-      // First selection or reset selection
-      setCheckInDate(date);
-      setCheckOutDate(null);
-    } else if (date > checkInDate) {
-      // Second selection - check out date
-      setCheckOutDate(date);
-    } else {
-      // If selected date is before check-in, make it the new check-in
-      setCheckInDate(date);
-      setCheckOutDate(null);
-    }
+    const newCheckOutDate = new Date(date);
+    newCheckOutDate.setDate(date.getDate() + 7);
+
+    setCheckInDate(date);
+    setCheckOutDate(newCheckOutDate);
   };
 
   const isDateInRange = (date: Date) => {
@@ -160,6 +153,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({ apartmentId, price, m
             {calendarDays.map((date, index) => {
               const isCurrentMonth = date.getMonth() === currentDate.getMonth();
               const isPast = date < today;
+              const isSelectable = true;
               const isSelected = isDateSelected(date);
               const isInRange = isDateInRange(date);
               const isToday = date.getTime() === today.getTime();
